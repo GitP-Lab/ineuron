@@ -1,0 +1,32 @@
+Q1.from Daniel Fourro to everyone:
+ if the current date is 19 June 2020, SAS_MONTH_KEY should be 202006.
+Our base folder in Unix environment is /home/proj/IT/data. Under data we have 3 folders (Ext, Stg, Tfm). Under each of the 3 folders we have folders in SAS_MONTH_KEY format
+Example: 
+/home/proj/IT/data/Ext/202001
+/home/proj/IT/data/Stg/202001
+/home/proj/IT/data/Tfm/202001
+Once you run your macro, using the SAS_MONTH_KEY variables that have been created, initialize the following libraries: 
+- Lib_Ext:  Initialized to the Ext path to the SAS_MONTH_KEY folder
+- Lib_Stg:  Initialized to the Stg path to the SAS_MONTH_KEY folder
+- Lib_Tfm:  Initialized to the Tfm path to the SAS_MONTH_KEY folder
+The attached excel file has the metadata requirements for our output dataset. Using sashelp.class table as a source, write a script to validate we have the correct metadata and identify any attributes that are not aligned. This will need to be done across several tables so should be written with that in mind. 
+
+Q2.
+from Daniel Fourro to everyone:
+Write a SAS Macro that based on the current date: 
+-- Initializes SAS_MAX_DATE as the last date of the current month. For example, if the current date is 19 June 2020, SAS_MAX_DATE should be 30JUN2020. 
+-- Initializes SAS_RDBMS_DATE as the last date of the current month. For example, if the current date is 19 June 2020, SAS_RDBMS_DATE should be 2020-06-30. 
+-- Initializes SAS_MONTH_KEY as the YYYYMM format. For example, if the current date is 19 June 2020, SAS_MONTH_KEY should be 202006.
+
+from Daniel Fourro to everyone:
+Our base folder in Unix environment is /home/proj/IT/data. Under data we have 3 folders (Ext, Stg, Tfm). Under each of the 3 folders we have folders in SAS_MONTH_KEY format
+Example: 
+/home/proj/IT/data/Ext/202001
+/home/proj/IT/data/Stg/202001
+/home/proj/IT/data/Tfm/202001
+
+from Daniel Fourro to everyone:
+Once you run your macro, using the SAS_MONTH_KEY variables that have been created, initialize the following libraries: 
+- Lib_Ext:  Initialized to the Ext path to the SAS_MONTH_KEY folder
+- Lib_Stg:  Initialized to the Stg path to the SAS_MONTH_KEY folder
+- Lib_Tfm:  Initialized to the Tfm path to the SAS_MONTH_KEY folder
